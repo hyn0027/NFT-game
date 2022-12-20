@@ -1,0 +1,25 @@
+{
+  "name": "proj",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "7.0.96",
+    "@mdi/js": "^7.1.96",
+    "roboto-fontface": "*",
+    "vue": "^3.2.38",
+    "vuetify": "^3.0.0",
+    "web3": "^1.8.1",
+    "webfontloader": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.0.3",
+    "hardhat": "^2.12.4",
+    "vite": "^3.1.9",
+    "vite-plugin-vuetify": "^1.0.0-alpha.12",
+    "vue-router": "^4.1.6"
+  }
+}

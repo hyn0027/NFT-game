@@ -1,0 +1,771 @@
+[
+	{
+		"inputs": [],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "all_selling",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "card_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "money",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address payable",
+				"name": "to",
+				"type": "address"
+			}
+		],
+		"name": "buy",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "card_id",
+				"type": "uint256"
+			}
+		],
+		"name": "cancel_sell",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "be_upgrade",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "material",
+				"type": "uint256"
+			}
+		],
+		"name": "change_color",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card",
+				"name": "",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "card_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "money",
+				"type": "uint256"
+			}
+		],
+		"name": "change_money",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "check",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint8",
+				"name": "timezone",
+				"type": "uint8"
+			}
+		],
+		"name": "daysToDate",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "year",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "month",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "day",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "get_rand",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "addr",
+				"type": "address"
+			}
+		],
+		"name": "get_username",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "if_upgrade",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "lastPurchased",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card",
+				"name": "",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "purchase",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card",
+				"name": "",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "purchaseChance",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "rand",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "level",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "color",
+				"type": "uint256"
+			}
+		],
+		"name": "rarity_search",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "card_id",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "money",
+				"type": "uint256"
+			}
+		],
+		"name": "sell",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "namee",
+				"type": "string"
+			}
+		],
+		"name": "set_username",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "show_my_selling",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "show_owned",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card[]",
+				"name": "",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "id",
+				"type": "uint256"
+			}
+		],
+		"name": "show_specific",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "be_upgrade",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256[]",
+				"name": "material",
+				"type": "uint256[]"
+			}
+		],
+		"name": "upgrade",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "card_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "point",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "selling",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sell_money",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owned",
+						"type": "address"
+					}
+				],
+				"internalType": "struct Color_card.Card",
+				"name": "",
+				"type": "tuple"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "level",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "color",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Color_card.Type",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]
